@@ -2,6 +2,8 @@ import java.io.IOException;
 
 public class Main {
     public static void main(String[] args) {
+        String caminhoPasta = "/home/bryan/IdeaProjects/Algoritmos de Ordenacao/src/ArquivosCsv/"; //precisa mudar o caminho para o do seu pc para funcionar Victor
+
         String[] arquivos = {
                 "aleatorio_100.csv", "aleatorio_1000.csv", "aleatorio_10000.csv",
                 "crescente_100.csv", "crescente_1000.csv", "crescente_10000.csv",
@@ -10,7 +12,7 @@ public class Main {
 
         for (String arquivo : arquivos) {
             try {
-                int[] dados = FileReaderUtil.readIntegersAsArray(arquivo);
+                int[] dados = FileReaderUtil.readIntegersAsArray(caminhoPasta + arquivo);
 
                 System.out.println("Arquivo: " + arquivo);
 
