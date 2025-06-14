@@ -2,7 +2,7 @@ import java.io.IOException;
 
 public class Main {
     public static void main(String[] args) {
-        String caminhoPasta = "/home/bryan/IdeaProjects/Algoritmos de Ordenacao/src/ArquivosCsv/"; //precisa mudar o caminho para o do seu pc para funcionar Victor
+        String caminhoPasta = "C:/Users/miche/Downloads/Algoritmos-de-Ordenacao-main/Algoritmos-de-Ordenacao-main/ArquivosCsv/";
 
         String[] arquivos = {
                 "aleatorio_100.csv", "aleatorio_1000.csv", "aleatorio_10000.csv",
@@ -29,6 +29,14 @@ public class Main {
                 SortAlgorithms.quickSort(copia2, 0, copia2.length - 1);
                 fim = System.nanoTime();
                 System.out.println(new SortResult(arquivo, "Quick Sort", fim - inicio));
+
+                // Bubble Sort
+                int[] copia3 = MyArray.copiar(dados);
+                inicio = System.nanoTime();
+                SortAlgorithms.bubbleSort(copia3);
+                fim = System.nanoTime();
+                System.out.println(new SortResult(arquivo, "Bubble Sort", fim - inicio));
+
 
                 System.out.println("------------------------------------");
 
