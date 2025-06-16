@@ -1,1 +1,1 @@
-Trabalho de Eestrutura de Dados sobre Algoritmos de Ordenação 
+Trabalho de Estrutura de Dados sobre Algoritmos de Ordenação 
