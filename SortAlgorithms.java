@@ -14,26 +14,30 @@ public class SortAlgorithms {
             arr[j + 1] = chave;
         }
     }
-
+ // Método principal do Quick Sort (versão recursiva)
     public static void quickSort(int[] arr, int inicio, int fim) {
         if (inicio < fim) {
+            // Encontra a posição do pivô após a partição
             int p = particionar(arr, inicio, fim);
+            // Ordena recursivamente os elementos antes e depois do pivô
             quickSort(arr, inicio, p - 1);
             quickSort(arr, p + 1, fim);
         }
     }
-
+// Método auxiliar para particionar o array (usado no Quick Sort)
     private static int particionar(int[] arr, int inicio, int fim) {
-        int pivo = arr[fim];
-        int i = inicio - 1;
+        int pivo = arr[fim]; // Define o pivô como o último elemento
+        int i = inicio - 1; // Define o pivô como o último elemento
         for (int j = inicio; j < fim; j++) {
             if (arr[j] < pivo) {
                 i++;
+                // Troca arr[i] com arr[j]
                 int temp = arr[i];
                 arr[i] = arr[j];
                 arr[j] = temp;
             }
         }
+        // Coloca o pivô na posição correta
         int temp = arr[i + 1];
         arr[i + 1] = arr[fim];
         arr[fim] = temp;
@@ -43,10 +47,13 @@ public class SortAlgorithms {
     public static void bubbleSort(int[] arr) {
         int n = arr.length;
         boolean trocou;
+        // Loop externo controla o número de passadas
         for (int i = 0; i < n - 1; i++) {
             trocou = false;
+            // Loop interno faz as comparações e trocas de pares adjacentes
             for (int j = 0; j < n - 1 - i; j++) {
                 if (arr[j] > arr[j + 1]) {
+                     // Troca os elementos
                     int temp = arr[j];
                     arr[j] = arr[j + 1];
                     arr[j + 1] = temp;
