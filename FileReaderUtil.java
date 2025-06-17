@@ -1,5 +1,5 @@
 import java.io.*;
-
+// Classe utilitária para leitura de inteiros a partir de um arquivo
 public class FileReaderUtil {
     public static MyArrayList<Integer> readIntegers(String filePath) throws IOException {
         MyArrayList<Integer> numeros = new MyArrayList<>(10);
