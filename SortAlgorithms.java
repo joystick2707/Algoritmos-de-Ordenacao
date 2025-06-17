@@ -1,14 +1,16 @@
 public class SortAlgorithms {
-
+// Método para ordenar um array usando o algoritmo Insertion Sort
     public static void insertionSort(int[] arr) {
         int n = arr.length;
         for (int i = 1; i < n; ++i) {
-            int chave = arr[i];
+            int chave = arr[i]; // Elemento que será inserido na posição correta
             int j = i - 1;
+            // Move os elementos maiores que a chave uma posição para frente
             while (j >= 0 && arr[j] > chave) {
                 arr[j + 1] = arr[j];
                 j = j - 1;
             }
+            // Insere a chave na posição correta
             arr[j + 1] = chave;
         }
     }
