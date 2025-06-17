@@ -10,7 +10,7 @@ public class Main {
                 "crescente_100.csv", "crescente_1000.csv", "crescente_10000.csv",
                 "decrescente_100.csv", "decrescente_1000.csv", "decrescente_10000.csv"
         };
-
+ // Loop para processar cada arquivo da lista
         for (String arquivo : arquivos) {
             try {
                 int[] dados = FileReaderUtil.readIntegersAsArray(caminhoPasta + arquivo);
