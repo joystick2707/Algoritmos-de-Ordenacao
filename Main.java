@@ -3,7 +3,8 @@ import java.io.IOException;
 public class Main {
     public static void main(String[] args) {
         String caminhoPasta = "C:/Users/miche/Downloads/Algoritmos-de-Ordenacao-main/Algoritmos-de-Ordenacao-main/ArquivosCsv/";
-
+   
+        // Lista com os nomes dos arquivos CSV que serão processados
         String[] arquivos = {
                 "aleatorio_100.csv", "aleatorio_1000.csv", "aleatorio_10000.csv",
                 "crescente_100.csv", "crescente_1000.csv", "crescente_10000.csv",
