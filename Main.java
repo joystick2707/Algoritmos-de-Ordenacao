@@ -13,6 +13,7 @@ public class Main {
  // Loop para processar cada arquivo da lista
         for (String arquivo : arquivos) {
             try {
+                 // Lê os dados do arquivo e armazena em um array de inteiros
                 int[] dados = FileReaderUtil.readIntegersAsArray(caminhoPasta + arquivo);
 
                 System.out.println("Arquivo: " + arquivo);
