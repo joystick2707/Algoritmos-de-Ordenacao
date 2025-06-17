@@ -1,6 +1,7 @@
 import java.io.*;
 // Classe utilitária para leitura de inteiros a partir de um arquivo
 public class FileReaderUtil {
+    // Método para ler inteiros de um arquivo e retornar uma lista do tipo MyArrayList<Integer>
     public static MyArrayList<Integer> readIntegers(String filePath) throws IOException {
         MyArrayList<Integer> numeros = new MyArrayList<>(10);
         BufferedReader reader = new BufferedReader(new FileReader(filePath));
