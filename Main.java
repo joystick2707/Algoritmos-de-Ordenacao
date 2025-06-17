@@ -43,6 +43,7 @@ public class Main {
                 System.out.println("------------------------------------");
 
             } catch (IOException e) {
+                // Caso ocorra algum erro na leitura do arquivo, exibe uma mensagem de err
                 System.out.println("Erro ao ler o arquivo " + arquivo + ": " + e.getMessage());
             }
         }
